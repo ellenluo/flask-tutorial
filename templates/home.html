@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <h2>Add Message</h2>
+    <form method="POST" action="/">
+      <input type="text" name="name">
+      <input type="text" name="message">
+      <input type="submit" value="Post">
+    </form>
+    <h2>Messages</h2>
+    {% for m in messages %}
+      <p>{{m[1]}} - {{m[2]}}</p>
+    {% endfor %}
+  </body>
+</html>
